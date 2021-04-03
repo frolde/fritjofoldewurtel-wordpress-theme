@@ -1,0 +1,66 @@
+.block {
+  &.contact {
+    text-align: center;
+    background-color: theme-color("primary");
+    color: #fff;
+    padding: 8rem 0;
+    margin-bottom: 2vw;
+
+    .contact-row {
+      .contact-headline-col {
+        strong {
+          font-weight: 300;
+        }
+      }
+
+      .contact-col {
+        margin-top: 4rem;
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 2rem;
+        }
+
+        &-phone {
+          @include media-breakpoint-up(md) {
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              width: 2px;
+              background-color: #fff;
+            }
+          }
+        }
+
+        .contact-link {
+          color: #fff;
+          text-decoration: none;
+
+          .contact-icon {
+            @include media-breakpoint-up(md) {
+              display: block;
+              font-size: 4rem;
+              margin-bottom: 1rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+              font-size: 2.5rem;
+              margin-bottom: 0;
+              margin-right: 0.75rem;
+              line-height: 1;
+              vertical-align: middle;
+            }
+          }
+
+          .contact-link-label {
+            @include media-breakpoint-down(sm) {
+              line-height: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

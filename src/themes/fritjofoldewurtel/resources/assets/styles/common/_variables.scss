@@ -1,0 +1,26 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #346c8d,
+  bg-accent: #f5f5f5,
+  dark: #232323,
+  white-accent: #fafafa,
+);
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Font settings
+$standard-font: "Open Sans", sans-serif;
+$headline-font: "Roboto Slab", serif;
+
+// Font sizes
+$fontsize-smaller: 0.75rem;
+$fontsize-standard: 1rem;
+$fontsize-bigger: 1.25rem;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;

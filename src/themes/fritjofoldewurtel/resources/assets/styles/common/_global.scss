@@ -1,0 +1,37 @@
+body {
+  padding: 2vw 2vw 0 2vw;
+  font-family: $standard-font;
+  overflow-x: hidden;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $headline-font;
+  }
+
+  a,
+  button.navbar-toggler {
+    transition: all ease 0.5s;
+
+    &:hover {
+      color: theme-color("primary");
+      text-decoration: none;
+    }
+  }
+
+  i.fa {
+    font-family: "FontAwesome", sans-serif !important;
+  }
+
+  main,
+  .wrap {
+    padding: 0 !important;
+  }
+
+  .pagecontent {
+    background-color: theme-color("white-accent");
+  }
+}

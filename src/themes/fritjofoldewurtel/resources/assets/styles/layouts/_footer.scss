@@ -1,0 +1,54 @@
+footer {
+  width: 100%;
+
+  a {
+    color: #fff;
+  }
+
+  .copyright {
+    background-color: theme-color("dark");
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: $fontsize-standard;
+
+    span {
+      opacity: 0.5;
+      font-size: $fontsize-smaller;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  .pagefooter {
+    background-color: theme-color("dark");
+    color: #fff;
+    padding: 40px 0 20px 0;
+
+    .footer__col {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      &--left {
+        ul#menu-footer-menue {
+          list-style-type: none;
+          padding-left: none;
+        }
+      }
+
+      &--middle {
+        img {
+          width: auto;
+          height: 2.5rem;
+        }
+      }
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

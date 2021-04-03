@@ -1,0 +1,37 @@
+.wrap {
+  .clients {
+    text-align: center;
+    color: theme-color("dark");
+    padding: 4rem 0;
+    margin-bottom: 2vw;
+
+    h2 {
+      text-align: center;
+      width: 100%;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    .clients__slider {
+      .clients__singleslide {
+        height: 4rem;
+        margin: 1rem 0;
+        padding: 0 0.5rem;
+
+        @include media-breakpoint-down(sm) {
+          margin: 0;
+        }
+
+        .logo {
+          height: 4rem;
+          width: 100%;
+          background-size: 90% auto;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+}

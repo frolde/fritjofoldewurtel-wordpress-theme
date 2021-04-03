@@ -1,0 +1,57 @@
+.block {
+  &.skills {
+    background-color: theme-color("primary");
+    color: #fff;
+    padding: 6rem 0;
+    margin-bottom: 2vw;
+
+    .claim-row {
+      margin-bottom: 6rem;
+
+      h2 {
+        font-size: 2.5rem;
+        line-height: 1.35;
+        font-weight: 300;
+        text-align: center;
+        font-family: $standard-font;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 5.5vw;
+        }
+      }
+
+      strong {
+        display: block;
+        text-align: center;
+        font-family: $standard-font;
+        line-height: 1.35rem;
+        font-weight: 300;
+        margin-top: 1.5rem;
+      }
+    }
+
+    .benefit-row {
+      .single-benefit {
+        margin-bottom: 2.5rem;
+
+        @include media-breakpoint-down(xs) {
+          padding: 0 15vw;
+        }
+
+        h3 {
+          font-size: $fontsize-bigger;
+          line-height: 1.35;
+          font-weight: 600;
+          text-align: center;
+        }
+
+        span {
+          font-size: $fontsize-standard;
+          text-align: center;
+          display: block;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

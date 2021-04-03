@@ -1,0 +1,47 @@
+.wrap {
+  .author {
+    .author__image {
+      .author__image--rounded {
+        height: 20vh;
+        width: 20vh;
+        min-height: 120px;
+        min-width: 120px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+      }
+
+      align-self: center;
+    }
+
+    .author__citation {
+      padding: 0 0 0 3rem;
+      align-self: center;
+      text-align: left;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 25vw;
+      }
+
+      @include media-breakpoint-up(md) {
+        max-width: 40vw;
+      }
+
+      @include media-breakpoint-down(sm) {
+        max-width: 47.5vw;
+      }
+
+      strong {
+        display: block;
+        text-align: left;
+      }
+
+      hr {
+        margin: 0.5rem 0;
+      }
+    }
+
+    padding: 6rem 0;
+    margin-bottom: 2vw;
+  }
+}

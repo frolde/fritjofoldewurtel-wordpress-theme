@@ -1,0 +1,29 @@
+.block {
+  &.accounts {
+    padding: 1vw 4vw;
+    background-color: theme-color("bg-accent");
+
+    @include media-breakpoint-down(sm) {
+      padding: 4vw;
+    }
+
+    .accounts__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .accounts__link {
+        color: theme-color("primary");
+        padding: 2rem;
+
+        @include media-breakpoint-down(sm) {
+          padding: 1rem 2rem;
+        }
+
+        .accounts__icon {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
